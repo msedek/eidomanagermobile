@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmsTab</string>
+
+
+    <!--    <string name="iptab">http://192.168.0.34:3000/</string>
+    <string name="iptab2">http://192.168.0.34/</string>-->
+    <string name="iptab">http://104.196.178.124:3000</string>
+    <string name="iptab2">http://104.196.178.124/</string>
+
+    <string-array name="remis_array">
+        <item>caja</item>
+        <item>mesa</item>
+        <item>cocina</item>
+        <item>bar</item>
+        <item>dpto-gerencia</item>
+    </string-array>
+
+
+    <string-array name="mese_array">
+        <item>01 – 04</item>
+        <item>05 – 08</item>
+        <item>09 – 12</item>
+        <item>13 – 16</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

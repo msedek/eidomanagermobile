@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="660"
+    tools:context="com.eidotab.smstab.PlatoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cam">
+
+
+            <io.fotoapparat.view.CameraView
+                android:id="@+id/camera_view"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/poto"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:src="@drawable/cam"/>
+
+
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU ACTIVO ACTUAL: "/>
+
+        <TextView
+            android:id="@+id/mactualp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="280"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_plato"
+            android:layout_width="300dp"
+            android:textAlignment="viewStart"
+
+            android:hint="Nombre del Plato"
+            android:maxLength="18"
+            android:layout_margin="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_cate"
+            android:layout_width="300dp"
+            android:textAlignment="viewStart"
+
+            android:hint="Categoría"
+            android:maxLength="18"
+            android:layout_margin="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_descri"
+            android:layout_width="300dp"
+            android:textAlignment="viewStart"
+
+            android:hint="Descripción"
+            android:maxLength="30"
+            android:layout_margin="0dp"
+            android:lines="1"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_precio"
+            android:layout_width="300dp"
+            android:textAlignment="viewStart"
+
+            android:hint="Precio S/."
+            android:maxLength="18"
+            android:inputType="numberDecimal"
+            android:layout_margin="0dp"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/btn_sugecheff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sugerencia del Chef"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <Button
+                android:enabled="false"
+                android:id="@+id/btn_guardar"
+            android:layout_width="140dp"
+            android:text="Guardar"
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_salir"
+                android:layout_width="140dp"
+                android:text="Salir"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

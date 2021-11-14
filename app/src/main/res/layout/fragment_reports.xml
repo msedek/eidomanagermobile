@@ -1,0 +1,234 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.eidotab.smstab.Fragments.ReportsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="611"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="62"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estadísticas"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>  <!--TITULO-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="549">
+
+            <LinearLayout
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1280">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1164"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:weightSum="1157"
+                    android:paddingBottom="3dp"
+                    android:gravity="bottom">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1157"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="4dp"
+                        card_view:cardCornerRadius="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1157">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="325"
+                                android:weightSum="325"
+                                android:gravity="center"
+                                android:orientation="horizontal"> <!--BOTONES-->
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="222"
+                                    android:orientation="vertical"
+                                    android:weightSum="224">
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="224"
+                                        android:weightSum="240"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="15">
+                                        </LinearLayout>
+
+                                        <RadioButton
+                                            android:id="@+id/radioventas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30"
+                                            android:textStyle="bold"
+                                            android:background="@drawable/mesebtnbbradioaz"
+                                            android:button="@android:color/transparent"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="16sp"
+                                            android:textAllCaps="false"
+                                            android:text="Ventas"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30">
+
+                                        </LinearLayout>
+
+                                        <RadioButton
+                                            android:id="@+id/radiomesas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30"
+                                            android:textStyle="bold"
+                                            android:background="@drawable/mesebtnbbradioam"
+                                            android:button="@android:color/transparent"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="16sp"
+                                            android:textAllCaps="false"
+                                            android:text="Mesas"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30">
+
+                                        </LinearLayout>
+
+                                        <RadioButton
+                                            android:id="@+id/radioplatos"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30"
+                                            android:background="@drawable/mesebtnbbradiorj"
+                                            android:button="@android:color/transparent"
+                                            android:textStyle="bold"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="16sp"
+                                            android:textAllCaps="false"
+                                            android:text="Productos"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30">
+
+                                        </LinearLayout>
+
+                                        <RadioButton
+                                            android:id="@+id/radiomeseros"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30"
+                                            android:background="@drawable/mesebtnbbradiove"
+                                            android:button="@android:color/transparent"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorAccent"
+                                            android:textStyle="bold"
+                                            android:textSize="16sp"
+                                            android:textAllCaps="false"
+                                            android:text="Empleados"/>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="15">
+                                        </LinearLayout>
+
+
+                                    </RadioGroup>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="839">
+
+                            </FrameLayout> <!--GRAFICAS-->
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+
+                </LinearLayout>  <!--CUERPO PRINCIPAL-->
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:weightSum="1280">
+                <com.eidotab.smstab.Model.ScrollableViewPager
+                    android:visibility="invisible"
+                    android:id="@+id/subfra"
+                    android:layout_width="0dp"
+                    android:layout_weight="955"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

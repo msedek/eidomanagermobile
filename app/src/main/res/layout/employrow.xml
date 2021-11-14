@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+    android:id="@+id/elpadre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="270">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="270"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="412">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="264"
+                android:layout_weight="90">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="71"
+                        android:orientation="vertical"
+                        android:gravity="top"
+                        android:weightSum="45">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/fotoempleado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:scaleType="centerCrop"
+                            android:layout_weight="45"
+                            android:src="@drawable/user_empty"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:gravity="left|center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="197"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp">
+
+                        <TextView
+                            android:id="@+id/lbl_nombre_empleado"
+                            android:textColor="#8cc63f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Garcilazo"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lbl_apellido_empleado"
+                            android:layout_width="wrap_content"
+                            android:textColor="#8cc63f"
+                            android:layout_height="wrap_content"
+                            android:text="Rodriguez"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2dp"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>  <!--FOTO-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="270"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/lbde"
+                    android:textSize="12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="71"
+                    android:layout_height="wrap_content"
+                    android:text="Online:"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="197"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:text="16:50 - 10/10/2017"/>
+
+            </LinearLayout>    <!--ACTIVIDAD-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="130"
+                android:orientation="vertical"
+                android:weightSum="130">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="26">
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mesas que atiende:"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/lbl_rango_atiende"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:hint="1, 2, 3, 4"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="26">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Llamados de mesa:"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/lbl_cant_llamados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:hint="12"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="26">
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Llamados atendidos:"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/lbl_cant_atendidos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:hint="8"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="26">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Platos entregados:"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/lbl_platos_entregados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:hint="15"/>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="26">
+
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bebidas entregadas:"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/lbl_bebidaS_entregadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:hint="22"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>  <!--ACCIONES-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="142"
+                android:gravity="bottom"
+                android:weightSum="142"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/btn_msnmesero"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:textSize="12sp"
+                        android:text="Enviar Mensaje"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:background="@drawable/mesebtnbb"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/btn_mesas"
+                        android:layout_width="match_parent"
+                        android:textAllCaps="false"
+                        android:layout_height="25dp"
+                        android:textSize="12sp"
+                        android:text="Modificar Mesas"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:background="@drawable/mesebtnbb"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>  <!--BOTONES-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+

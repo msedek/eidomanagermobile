@@ -1,0 +1,350 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="padre"
+    tools:context="com.eidotab.smstab.Fragments.SubFragments.SlideFragment">
+
+    <LinearLayout
+        android:tag="subpadre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="962"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+
+        <LinearLayout
+            android:id="@+id/fragchart"
+            android:tag="fragchart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="839"
+            android:weightSum="549">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="453"
+                android:orientation="vertical"
+                android:weightSum="453"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:weightSum="839">
+
+                    <LinearLayout
+                        android:visibility="invisible"
+                        android:id="@+id/btn_datetras"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:gravity="center_horizontal|bottom"
+                        android:layout_weight="50"
+                        tools:ignore="DisableBaselineAlignment">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="100"
+                            android:gravity="bottom"
+                            android:layout_weight="50">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/fbb"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|bottom"
+                        android:layout_weight="739">
+
+                        <TextView
+                            android:id="@+id/txrango"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:textSize="14sp"
+                            android:textColor="@color/over"
+                            android:visibility="invisible"
+                            android:text="Ventas del Lunes 04-10-2017"
+                            tools:ignore="HardcodedText" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="invisible"
+                        android:id="@+id/btn_datelante"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:gravity="center_horizontal|bottom"
+                        android:layout_weight="50">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="100"
+                            android:gravity="center_horizontal|bottom"
+                            android:layout_weight="50">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="40"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ffb"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:weightSum="403"
+                    android:layout_weight="373">
+
+                    <com.eidotab.smstab.Model.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="383"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="96"
+                android:orientation="horizontal"
+                android:weightSum="839">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_weight="616">
+
+                    <TextView
+                        android:id="@+id/txttitu"
+                        android:tag="txti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="Total ventas: S/. "
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txttotales"
+                        android:tag="txto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="10.576,00"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="223"
+                    android:layout_weight="223">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="96"
+                        android:gravity="top"
+                        android:layout_weight="162"
+                        tools:ignore="NestedWeights">
+
+                        <Button
+                            android:id="@+id/btn_vermas"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="52"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:text="Ver más"
+                            android:textAllCaps="false"
+                            android:background="@drawable/mesebtnbb"
+                            tools:ignore="HardcodedText" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="116"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:paddingTop="20dp"
+            android:weightSum="116">
+
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="87"
+                android:weightSum="240"
+                android:gravity="top"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    tools:ignore="UselessLeaf">
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radiodia"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/mesebtnbapagsub"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="D"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    tools:ignore="UselessLeaf">
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radiosemana"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/mesebtnbapagsub"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="S"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    tools:ignore="UselessLeaf">
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radiomes"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/mesebtnbapagsub"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="M"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    tools:ignore="UselessLeaf">
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radioano"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"
+                    android:background="@drawable/mesebtnbapagsub"
+                    android:button="@android:color/transparent"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="Y"
+                    tools:ignore="HardcodedText" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

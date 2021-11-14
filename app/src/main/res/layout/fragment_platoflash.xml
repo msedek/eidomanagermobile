@@ -1,0 +1,395 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="7dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.eidotab.smstab.Fragments.PlatoflashFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="483"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:weightSum="1142"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:layout_weight="331">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escoger menú activo"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="135">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingStart="10dp"
+                android:orientation="vertical"
+                android:layout_weight="676">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crear Plato Flash"
+                    android:textStyle="italic"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="443"
+            android:weightSum="1142"
+            android:paddingBottom="7dp"
+            android:paddingEnd="7dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="331"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardElevation="3dp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="245">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="40">
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_height="0dp"
+                            android:layout_weight="205">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/over"
+                                android:text="Menú 1"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/over"
+                                android:text="Menú 2"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textColor="@color/over"
+                                android:text="Menú 3"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="135">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="676"
+                android:orientation="vertical"
+                android:weightSum="334">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:weightSum="334"
+                    android:layout_weight="334">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card_view:cardElevation="3dp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="412">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="412">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:weightSum="412">
+
+                                    <LinearLayout
+                                        android:id="@+id/lyotxt"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="245"
+                                        android:weightSum="245"
+                                        android:padding="7dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="45">
+
+                                        </LinearLayout>
+
+                                        <EditText
+                                            android:id="@+id/txt_plato"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textColor="@color/over"
+                                            android:layout_weight="45"
+                                            android:textAlignment="viewStart"
+                                            android:textSize="18sp"
+                                            android:background="@drawable/customline"
+                                            android:hint="Nombre del Plato"/>
+
+                                        <EditText
+                                            android:id="@+id/txt_cate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textColor="@color/over"
+                                            android:layout_weight="45"
+                                            android:textAlignment="viewStart"
+                                            android:textSize="18sp"
+                                            android:background="@drawable/customline"
+                                            android:hint="Categoría"/>
+
+                                        <EditText
+                                            android:id="@+id/txt_descri"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textColor="@color/over"
+                                            android:layout_weight="45"
+                                            android:textAlignment="viewStart"
+                                            android:textSize="18sp"
+                                            android:background="@drawable/customline"
+                                            android:hint="Descripción"/>
+
+                                        <EditText
+                                            android:id="@+id/txt_precio"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textColor="@color/over"
+                                            android:layout_weight="45"
+                                            android:textAlignment="viewStart"
+                                            android:textSize="18sp"
+                                            android:background="@drawable/customline"
+                                            android:hint="Precio S/."/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:orientation="vertical"
+                                        android:paddingStart="10dp"
+                                        android:gravity="center_vertical|start"
+                                        android:layout_weight="80">
+
+
+                                        <RelativeLayout
+                                            android:id="@+id/btn_add"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent">
+
+                                            <ImageView
+                                                android:id="@+id/btnadd"
+                                                android:layout_width="25dp"
+                                                android:layout_height="25dp"
+                                                android:layout_marginRight="3dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerVertical="true"
+                                                android:src="@drawable/plus_boxg"/>
+
+                                            <TextView
+                                                android:id="@+id/txtagr"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="AGREGAR FOTO"
+                                                android:layout_centerVertical="true"
+                                                android:layout_toRightOf="@id/btnadd"
+                                                android:textStyle="bold"
+                                                android:textSize="14sp"
+                                                android:textColor="@color/colorPrimary"/>
+                                        </RelativeLayout>
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="90"
+                                        android:orientation="horizontal"
+                                        android:weightSum="676">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal"
+                                            android:gravity="end"
+                                            android:layout_weight="305"
+                                            android:weightSum="305">
+                                            
+                                            
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="172"
+                                                android:gravity="center"
+                                                android:weightSum="90"
+                                                android:orientation="vertical">
+                                                
+                                                <Button
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:background="@drawable/mesebtnbb"
+                                                    android:text="Guardar"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="@color/colorAccent"
+                                                    android:layout_weight="48"/>
+
+                                                
+                                            </LinearLayout>
+
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="66">
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal"
+                                            android:gravity="start"
+                                            android:layout_weight="305"
+                                            android:weightSum="305">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="172"
+                                                android:gravity="center"
+                                                android:weightSum="90"
+                                                android:orientation="vertical">
+
+                                                <Button
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:background="@drawable/mesebtnbb"
+                                                    android:text="Cancelar"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="@color/colorAccent"
+                                                    android:layout_weight="48"/>
+
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>   <!--CREAR PLATO-->
+
+
+                                <LinearLayout
+                                    android:id="@+id/lyophoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+
+
+                                </LinearLayout>   <!--CREAR FOTO-->
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
